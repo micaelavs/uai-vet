@@ -6,6 +6,54 @@
 
 <html>
 <head>
+    <style>
+        footer {
+          background: none repeat scroll 0 0 #ff5733;
+          color: #FFFFFF;
+          display: table;
+          width: 100%;
+        }
+        footer .direccion {
+          float: left;
+          font-size: 12px;
+          margin: 22px 0 0 75px;
+          width: 270px;
+        }
+        footer p {
+          line-height: normal;
+          margin: 0;
+        }
+        footer p.dir {
+          background: url("../images/icono-direccion-pie.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
+          padding: 2px 0 2px 15px;
+        }
+        footer p.tel{
+          background: url("../images/icono-telefono-pie.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
+          padding: 2px 0 2px 15px;
+        }
+        footer .diseno {
+          float: right;
+          font-family: Lato;
+          font-size: 10px;
+          font-weight: 300;
+          margin: 30px 57px;
+        }
+        footer .diseno p {
+          float: left;
+          margin: 0 35px 5px;
+        }
+        footer .diseno a {
+          color: #FFF;
+          text-decoration: none;
+        }
+        footer .diseno a:hover{
+	        text-decoration:underline;
+        }
+        footer .diseno #u8255 {
+          float: right;
+        }
+    </style>
+    
     <meta name="viewport" content="width=device-width" />
     <title></title>
 </head>
@@ -14,8 +62,8 @@
         <header>
             <nav>
                     <ul>
-                        <li><a href="acercaDe.html">Acerca de</a></li>
-                        <li><a href="turnos.html">Gestionar Turno</a></li>
+                        <li><a href="acercaDe.html">Nosotros</a></li>
+                        <li><a href="turnos.html">Turnos</a></li>
                         <li><a href="consultas.html">Consultas</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
@@ -24,7 +72,14 @@
         <h1>pagina principal</h1>
     @RenderBody()
         <footer>
-            pie de pagina
+                <div class="direccion">
+                    <div class="titulo"><strong>SÁNCHEZ</strong> CLÍNICA VETERINARIA</div>
+                    <p class="dir">Av. de Mayo 2186 - Buenos Aires</p>
+                    <p class="tel">46775-444</p>
+                </div>
+                <div class="diseno">
+                    <p>2019 - Sánchez Veterinaria <br> Todos los derechos reservados <br> <a href="" target="_blank"></a></p>
+                </div>
         </footer>
     </div>
 </body>
